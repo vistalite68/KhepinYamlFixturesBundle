@@ -18,7 +18,7 @@ class OrmYamlFixture extends AbstractFixture
             if (is_array($arguments)) {
                 foreach ($arguments as $argument) {
                     if (is_array($argument)) {
-                        if ($argument['type'] == 'datetime') {
+                        if ($argument['type'] == 'datetime' || $argument['type'] == 'timestamp') {
                             $constructArguments[] = new \DateTime($argument['value']);
                         } elseif ($argument['type'] == 'reference') {
                             $constructArguments[] = $this->loader->getReference($argument['value']);
