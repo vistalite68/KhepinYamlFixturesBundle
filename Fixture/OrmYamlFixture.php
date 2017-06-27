@@ -43,7 +43,7 @@ class OrmYamlFixture extends AbstractFixture
             if (in_array($field, $mapping)) {
                 // Dates need to be converted to DateTime objects
                 $type = $metadata->fieldMappings[$field]['type'];
-                if ($type == 'datetime' || $type == 'date' || $type == 'time') {
+                if ($type == 'datetime' || $type == 'date' || $type == 'time' || $type == 'timestamp') {
                     $value = new \DateTime($value);
                 }
                 $object->$method($value);
