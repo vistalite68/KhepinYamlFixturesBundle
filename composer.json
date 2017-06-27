@@ -1,5 +1,5 @@
 {
-    "name": "vistalite68/yaml-fixtures-bundle",
+    "name": "khepin/yaml-fixtures-bundle",
     "type": "symfony-bundle",
     "description": "Symfony bundle for easy loading of YAML based fixtures.",
     "keywords": ["data fixtures doctrine yaml"],
